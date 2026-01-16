@@ -1,0 +1,55 @@
+{% extends "reception.html" %}
+
+{% block content %}
+    <h1>Admission Form</h1>
+    <h4> Note : Kindly Keep aadhar card with You!</h4>
+
+    <form class="reg-form" action="/admission" method="post">
+        <h2>Patient Details</h2>
+
+        <label>Name* : </label>
+        <input type="text" name="name" placeholder="Full Name" required>
+
+        <label for="uhid">UHID* : </label>
+        <input type="number" name="uhid" placeholder="UHID number" required>
+
+        <label>Aadhar* : </label>
+        <input type="number" name="aadhar" placeholder="Aadhar Number" required minlength="12" maxlength="12">
+
+        <label>City* : </label>
+        <input type="text" name="city" placeholder="City" required>
+
+        <label>State* : </label>
+        <input type="text" name="state" placeholder="Residence State" required>
+
+<br><br>
+
+        <h2>Contact Details </h2>
+        <label>Mobile* : </label>
+        <input type="number" name="mobile" placeholder="Mobile" required minlength="10" maxlength="10">
+
+        <label>Emergency Contact* : </label>
+        <input type="number" name="emergency" placeholder="Emergency Contact" required>
+
+<br><br>
+
+        <h2>Doctor Details : </h2>
+        <label>Name* : </label>
+        <input type="text" name="doctor" placeholder="Doctor Name" required>
+
+        <label>Department* : </label>
+        <input type="text" name="department" placeholder="Department" required>
+
+        <label>Doctor ID* : </label>
+        <input type="number" name="docid" placeholder="Doctor ID" required>
+
+<br><br>
+
+        <h2>Appointment Details : </h2>
+        <label>Appointment Date* : </label>
+        <input type="date" name="date" placeholder="Date" required>
+<br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+{% endblock %}

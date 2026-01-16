@@ -1,0 +1,60 @@
+body { margin: 0; font-family: sans-serif; }
+
+.top-nav {
+    height: 60px;
+    background: #00bcd4; /* Your teal theme */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+}
+
+.main-wrapper {
+    display: flex; /* This puts sidebar and content side-by-side */
+    height: calc(100vh - 60px); /* Full height minus top-nav */
+}
+
+.side-nav {
+    width: 250px;
+    background: #004a8c; /* Your dark blue theme */
+    color: white;
+    padding: 20px;
+}
+
+.side-nav ul { list-style: none; padding: 0; }
+.side-nav li { margin-bottom: 15px; }
+.side-nav a { color: white; text-decoration: none; }
+
+.content {
+    flex: 1; /* Takes up the remaining space */
+    padding: 20px;
+    background: #f4f7f6;
+}
+
+.logout a {
+    color: black;
+    flex: 1;
+    flex-direction: row;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.7); /* Opaque background */
+    color: white;
+}
+
+.styled-table th {
+    background-color: #008080; /* Your teal theme */
+    padding: 12px;
+}
+
+.styled-table td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.styled-table tr:hover {
+    background-color: rgba(0, 188, 212, 0.2); /* Teal highlight on hover */
+}

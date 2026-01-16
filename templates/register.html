@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='reg.css')}}">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div class="reg-form">
+        <form action="/register" method="post">
+            <!-- <label for="id">ID : </label><br>
+            <input type="text" name="id" placeholder="id" required> -->
+
+            <label for="username">USERNAME : </label>
+            <input type="text" name="username" placeholder="username" required>
+
+            <label for="password">password : </label>
+            <input type="text" name="password" placeholder="password" required minlength="1">
+
+            <!-- <label for="username">USERNAME : </label>
+            <input type="text" name="username" placeholder="username" required>
+
+            <label for="username">USERNAME : </label>
+            <input type="text" name="username" placeholder="username" required>
+
+            <label for="username">USERNAME : </label>
+            <input type="text" name="username" placeholder="username" required>
+
+            <label for="username">USERNAME : </label>
+            <input type="text" name="username" placeholder="username" required>
+
+            <label for="username">USERNAME : </label>
+            <input type="text" name="username" placeholder="username" required>
+
+            <label for="username">USERNAME : </label>
+            <input type="text" name="username" placeholder="username" required> -->
+
+            <button type="submit">submit</button>
+        </form>
+    </div>
+</body>
+</html>
