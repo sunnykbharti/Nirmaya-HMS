@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharti Healthcares</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='login.css')}}">
+
+</head>
+<body>
+    <div>
+        {% if error %}
+            <p>{{error}}</p>
+        {% endif %}
+    </div>
+    <div class="login-container">
+        <div class="left-side">
+            <form class="login-form" action="/login" method="post">
+                <h2>Bharti Healthcare Login</h2>
+                <h3>{% if message %}
+                    {{message}}
+                    {% endif %}
+                </h3>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required minlength="1">
+                <button type="submit">Login</button>
+                <h4>Current Login @ {{time}}</h4>
+
+            </form>
+        </div>
+
+        <div class="right-side">
+            <h1>BHARTI HEALTHCARE</h1>
+        </div>
+    </div>
+</body>
+</html>

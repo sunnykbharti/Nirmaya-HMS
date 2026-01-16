@@ -1,0 +1,20 @@
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.7); /* Opaque background */
+    color: white;
+}
+
+.styled-table th {
+    background-color: #008080; /* Your teal theme */
+    padding: 12px;
+}
+
+.styled-table td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.styled-table tr:hover {
+    background-color: rgba(0, 188, 212, 0.2); /* Teal highlight on hover */
+}

@@ -1,0 +1,31 @@
+{% extends "reception.html" %}
+
+{% block content %}
+<div class="table-container">
+    <h2>Admitted Patient Records</h2>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>UHID</th>
+                <th>Name</th>
+                <th>Aadhar</th>
+                <th>Mobile</th>
+                <th>Doctor</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for patient in patients %}
+            <tr>
+                <td>{{ patient.uhid }}</td> 
+                <td>{{ patient.name }}</td>
+                <td>{{ patient.aadhar }}</td>
+                <td>{{ patient.mobile }}</td>
+                <td>{{ patient.doctor }}</td>
+                <td>{{ patient.department }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

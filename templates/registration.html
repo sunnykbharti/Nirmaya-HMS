@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharti Healthcares</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='registration.css')}}">
+
+</head>
+<body>
+    <div class="message">
+        {% if error %}
+            <p>{{error}}</p>
+        {% endif %}
+    </div>
+    <h1>Bharti Healthcare Registration Form</h2>
+    <div class="reg-container">
+        <div class="reg-box">
+            
+            <form class="login-form" action="/registration-form" method="post">
+                <h3>Registration Form</h3>
+                <div class="radio-group">
+                    <label>Register as : </label>
+                    <input type="radio" name="designation" value="doctor">
+                    <label>Doctor</label>
+
+                    <input type="radio" name="designation" value="staff">
+                    <label>Staff</label>
+
+                    <input type="radio" name="designation" value="pharmacy">
+                    <label>Pharmacy</label>
+
+                </div>
+ 
+<br>
+
+                <label>Name* : </label>
+                <input type="text" name="name" placeholder="Full Name" required>
+<br><br>
+                <label>IMC ID : </label>
+                <input type="number" name="imcid" placeholder="IMC ID for Doctors">
+<br><br>
+                <label>Aadhar* : </label>
+                <input type="number" name="aadhar" placeholder="Aadhar Number" required minlength="12" maxlength="12">
+<br><br>
+                <label>City* : </label>
+                <input type="text" name="city" placeholder="City" required>
+<br><br>
+                <label>State* : </label>
+                <input type="text" name="state" placeholder="Residence State" required>
+
+                
+                <br><br><br>
+                <button type="submit">Register</button>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{% extends "reception.html" %}
+
+{% block content %}
+<div class="search-section">
+    <h2>Search Doctor Appointments</h2>
+    <form action="{{ url_for('doctor_schedule') }}" method="GET" class="search-form">
+        <input type="text" name="doctor_id" placeholder="Enter Doctor ID (e.g. 101)" value="{{ search_id or '' }}">
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+<hr>
+
+<div class="table-container">
+    <h3>Results for Doctor ID: {{ search_id }}</h3>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>UHID</th>
+                <th>Patient Name</th>
+                <th>Department</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for appt in appointments %}
+            <tr>
+                <td>{{ appt.uhid }}</td>
+                <td>{{ appt.name }}</td>
+                <td>{{ appt.department }}</td>
+                <td>{{ appt.date }}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="4" style="text-align:center;">No appointments found for this ID.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

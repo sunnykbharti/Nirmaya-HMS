@@ -1,0 +1,90 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color:#004a8c;
+    padding: 2vh;
+}
+
+h3{
+    text-align: center;
+}
+
+.reg-container {
+    background-image: url("logo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    min-height: 100vh;       /* Full screen height */
+    background-color: #008080; /* Your teal background */
+}
+
+.reg-box {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(250px);          /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    color: white;
+}
+
+input, select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 188, 212, 0.5); /* Teal accent border */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* 
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    flex: 1; 
+    display: flex;
+    background-color: #0adee9;
+}
+
+
+
+.login-form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color:#004a8c;
+    padding: 2vh;
+}
