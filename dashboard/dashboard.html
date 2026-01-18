@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    
+    <!-- this is the code for header file only -->
+    <div class="head">
+        <div class="logo">
+            
+
+        </div>
+        <div class="company_name">
+           Nirmaya
+        </div>
+        <div class="user_interaction">
+            <span class="welcome-text">Welcome, User!!</span>
+        </div>
+    </div>
+    <!-- header code ends -->
+
+    <!-- sliding dashboard starting point -->
+    <div class="main">
+        <aside class="dashboard">
+            
+            <div class="listbox">
+                <ul class="innerlistbox">
+                    
+                   <li class="list_items">
+            <a href="input-vital.html" target="contentFrame">Input Vitals</a>
+        </li>
+        <li class="list_items">
+            <a href="generate-report.html" target="contentFrame">Generate Report</a>
+        </li>
+        <li class="list_items">
+            <a href="past-report.html" target="contentFrame">Past Medical Report</a>
+        </li>
+        <li class="list_items">
+            <a href="appointment.html" target="contentFrame">Doctor Appointment</a>
+        </li>
+        <li class="list_items">
+            <a href="help.html" target="contentFrame">Help Desk</a>
+        </li>
+        <li class="list_items">
+            <a href="profile.html" target="contentFrame">Profile</a>
+        </li>
+        <!-- when user log out it goes into home page -- home page yet on designing stage-->
+        <li><button class="button1">Log Out</button></li>
+        
+                </ul>
+                
+            </div>
+        </aside>
+        <div class="content">
+            <iframe name="contentFrame" class="inner_frame">
+                
+            </iframe>
+        </div>
+    </div>
+    
+</body>
+</html>

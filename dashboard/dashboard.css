@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap);
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+/* this is the code for header fisle only */
+.head{
+    height:7vh;
+    width:100%;
+    
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color:rgb(217, 216, 216);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    border-bottom: 5px solid black;
+
+}
+.logo{
+    /* margin-left: 15px;; */
+    background-color: rgb(209, 215, 220);
+    min-height:95%;
+    width:5%;
+    /* border:1px solid black; */
+    margin-right: auto;
+    backdrop-filter:transparent;
+    background-image: url(transparentlogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.company_name{
+    color:rgb(0, 37, 54);
+    font-size:40px;
+    font-family:rubik;
+    text-align: center;
+    font-weight: bold;
+    min-height:95%;
+    width:35%;
+    /* border:1px solid black;    */
+    margin-right: auto;
+    margin-left:10%;
+}
+.user_interaction{
+    font-family: 'Inter', sans-serif;
+    min-height:95%;
+    width:18%;
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    /* border:1px solid black; */
+
+}
+.welcome-text {
+    opacity: 0;
+    animation: welcomeFade 1.2s ease-out forwards;
+}
+
+@keyframes welcomeFade {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* header code ends here */
+
+/*dashboard starts here */
+.main {
+    display: flex;
+    height: 93vh;
+    width: 100%;
+}
+
+/* Sidebar */
+.dashboard {
+    background-color: rgba(143, 188, 228, 0.42);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 15%;
+    border-radius: 0 25px 0 0;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.15);
+    /* border: 2px solid black; */
+} 
+
+.listbox{
+    margin-top:30px;
+    height:75vh;
+    width:100%;
+    /* border:2px solid black; */
+    /* border:2px solid black; */
+
+}
+.innerlistbox{
+    height:70vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    /* border: 2px solid black; */
+
+}
+.list_items{
+    background-color: rgba(184, 216, 243, 0.352);
+    margin-left:3px;
+    color:darkblue;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;;
+    width:97%;
+    padding-top:5px;
+    font-size: 18px;
+    /* border:2px solid black; */
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    
+}
+.list_items a {
+    text-decoration: none;
+    color: black;   /* keeps text normal */
+}
+.list_items a:hover {
+    text-decoration:underline;
+    color: white;   /* keeps text normal */
+}
+
+.list_items:hover{
+    border:0.5px solid black;
+    background-color: #02406f;
+    /* color:white; */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+    transform: translateY(-2px);
+
+}
+.button1{
+    
+    font-size: 20px;
+    border:2px solid red;
+    height: 30px;
+    width:80%;
+    margin-left:15px;
+    color:red;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    background-color: rgba(221, 83, 83, 0.274);
+}
+.button1:hover{
+    background-color: red;
+    border:2px solid black;
+    color:white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+    transform: translateY(-2px);
+
+}
+/* Content area */
+.content {
+    height: 93vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    box-sizing: border-box; 
+    overflow: auto;
+}
+
+.inner_frame {
+    height: 100%;
+    width: 100%;
+    border-radius:15px;
+    background-color:rgba(156, 155, 155, 0.546);
+}
+
+
