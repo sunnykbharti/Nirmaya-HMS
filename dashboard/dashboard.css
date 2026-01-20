@@ -19,7 +19,7 @@ html, body {
     justify-content: space-between; 
     background-color:rgb(217, 216, 216);
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
-    border-bottom: 5px solid black;
+    /* border-bottom: 5px solid black; */
 
 }
 .logo{
@@ -173,6 +173,7 @@ html, body {
 
 }
 /* Content area */
+
 .content {
     height: 93vh;
     width: 100%;
@@ -180,13 +181,17 @@ html, body {
     border-radius: 15px;
     box-sizing: border-box; 
     overflow: auto;
+    box-shadow: 10px,10px,10px,transparent;
+    
 }
 
 .inner_frame {
+   
+    box-shadow: 10px,10px,10px,transparent;
     height: 100%;
     width: 100%;
     border-radius:15px;
-    background-color:rgba(156, 155, 155, 0.546);
+    background-color:rgba(179, 178, 178, 0.989);
 }
 
 
