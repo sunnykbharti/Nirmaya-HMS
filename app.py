@@ -138,6 +138,12 @@ def reception():
     time = datetime.datetime.now()
     return render_template("reception.html",time=time, message=msg)
 
+# #--------------------------------------------- Input - Vitals ----------------------------------------------------
+# @app.route('/vitals', methods = ["GET", "POST"])
+# @login_required
+# def vitals():
+#     return render_template("input-vital.html")
+
 #--------------------------------------------- LOGOUT FACILITY ----------------------------------------------------
 
 @app.route('/logout', methods=["GET","POST"])

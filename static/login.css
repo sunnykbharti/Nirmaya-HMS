@@ -25,7 +25,7 @@ h1{
     flex: 1; /* Takes up 50% */
     display: flex;
     justify-content: center;
-    background-image: url("logo.png");
+    background-image: url("logo_nirmaya.jpeg");
     background-position: center;
     padding: 10vh;
     font-size: xx-large;
