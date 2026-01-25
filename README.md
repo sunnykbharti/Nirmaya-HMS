@@ -19,7 +19,7 @@ Nirmaya HMS is a lightweight, dual-tier healthcare platform designed for rural I
 ## 🚀 How to Run Locally
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/sunny/nirmaya-hms.git](https://github.com/sunny/nirmaya-hms.git)
+    git clone [https://github.com/sunnykbharti/Nirmaya-HMS.git](https://github.com/sunnykbharti/Nirmaya-HMS.git)
     cd nirmaya-hms
     ```
 
